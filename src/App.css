@@ -101,9 +101,16 @@ body {
 	background-color: rgb(19, 19, 19);
 	color: white;
 	border: none;
+	text-align: center;
 }
 
+.form__submit input:hover {
+	cursor: pointer;
+}
 
+.discussion__wrapper {
+	width: 100%;
+}
 
 .discussion__container {
 	display: flex;
