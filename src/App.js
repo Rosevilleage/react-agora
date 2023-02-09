@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Discussions from './Components/Discussions';
+import Input from './Components/Input';
+
 
 function App() {
+  const [update, setUpdate] = useState(true);
+  const handleUpdate = () => {
+    setUpdate(!update);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* h1 myagora states */}
+      <h1>My agora States</h1>
+      {/* 입력 폼 */}
+      <Input handleUpdate={handleUpdate}/>
+      <Discussions update={update}/>
     </div>
   );
 }
