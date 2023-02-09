@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+## My Agora States: Eeact 버전입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+코드스테이츠 과제인 나만의 아고라스테이츠 만들기 `part: server` 까지 완성한 이후 처음에 만들었던 javascript 버전을 react로 새로 만들었습니다.
 
-## Available Scripts
+>편의상 js 버전을 v1, react 버전을 v2 그리고 아고라스테이츠는 아고라로 칭하겠습니다. 
 
-In the project directory, you can run:
+### 페이지 예시
+<p align='center'><img src='public/%EC%95%84%EA%B3%A0%EB%9D%BC%20%EC%98%88%EC%8B%9C.png' width=700/></p>
 
-### `npm start`
+### 기존 자바스크립트 버전과 달라진점
+* 나아진 가독성
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+	기존의 v1 아고라는 각 함수들이 하나의 데이터를 담은 변수에 의존하고, 다른 함수에 의존하는 부분이 상당수 있어서 코드를 읽고 파악하는 것이 번거로웠습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+	그러나 v2 아고라는 선언적으로 코드를 작성할 수 있는 react의 특성에 맞게 코드들은 더이상 이상하게 꼬인 스파게티 코드가 아닌 가독성 좋은 코드의 모습을 하게 되었으며, <br>
+	각 기능별 용도별 component가 분리되어 오류나 수정이 용이해 졌습니다.
 
-### `npm test`
+* fetch()를 통한 http 플로토콜 요청
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	v1 아고라에서는 하드코딩된 파일에 데이터를 모으고, 그 데이터를 바탕으로 post들을 뿌리고, localStorage를 사용해 post르르 추가하는 방식을 사용했습니다.
 
-### `npm run build`
+	v2 아고라는 단순한 데이터 목록 사용에서 한 발자국 더 나아가 서버와 통신해 데이터를 받아오는 조금은 페이지 같은 모습을 갖추게 되었습니다.
+	<img src='public/%EC%95%84%EA%B3%A0%EB%9D%BC.png' width=600/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
