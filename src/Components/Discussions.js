@@ -10,7 +10,7 @@ function Discussions({update}) {
   const offset = (page - 1) * limit;
 
 	useEffect(()=>{
-		fetch('http://localhost:4000/discussions')
+		fetch('url')
 		.then(res=>res.json())
 		.then(json=>setPosts(json))
 	}, [update])

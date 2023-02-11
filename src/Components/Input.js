@@ -8,12 +8,12 @@ function Input({handleUpdate}) {
 	 updatedAt: new Date().toISOString('ko-kr'),
 	 title: '', 
 	 author: '', 
-	 avatarUrl: 'https://avatars.githubusercontent.com/u/86960007?s=64&u=4863a873d78f406d658e8a50d9b91f3045006920&v=4',
+	 avatarUrl: 'avatarUrl',
 	 content: ''
 	 })
 
 	 const handleClick = () => {
-		 fetch('http://localhost:4000/discussions', {
+		 fetch('url', {
 			method: 'POST',
   		headers: {
    		 'Content-Type': 'application/json',
